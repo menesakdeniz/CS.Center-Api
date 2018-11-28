@@ -12,7 +12,7 @@ https://cs.center/api/ **APIKEY** / **URUNID** / **SERVIS**
 # Servisler
 
 Metod | SERVIS | Açıklama
-------------- | -------------
+------------- | ------------- | -------------
 GET | GetAdminGroups | Aktif admin gruplarını(tip : json)
 GET | GetAdmins | Aktif Adminlikleri listeler(tip : json)
 GET | GetChatColors | Aktif Renkli yazıları listeler(tip : json)
@@ -27,7 +27,7 @@ POST | AdminSales | Adminlik ve renkli yazı ekleme servisi, adminlik satışı 
 ## AddAdmin Servisi
 
 Input | Durum | Açıklama
-------------- | -------------
+------------- | ------------- | -------------
 steamid | Gerekli | Kullanıcı Steam ID
 immunity | Gerekli | Dokunulmazlık seviyesi
 flags | Gerekli | Yetki bayrakları
@@ -36,7 +36,7 @@ aciklama | Opsiyonel | Açıklama
 ## AddChatColors Servisi
 
 Input | Durum | Açıklama
-------------- | -------------
+------------- | ------------- | -------------
 steamid | Gerekli | Steam id
 tag | Gerekli | Tag
 tagkiskacstart | Gerekli | Tag başlangıç karakteri örn : [TAG] da ki [
@@ -48,7 +48,7 @@ tagcolor | Gerekli | Tag Rengi
 ## AdminSales Servisi
 
 Input | Durum | Açıklama
-------------- | -------------
+------------- | ------------- | -------------
 steamid | Gerekli | Kullanıcı Steam ID
 immunity | Gerekli | Dokunulmazlık seviyesi
 flags | Gerekli | Yetki bayrakları
