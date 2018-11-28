@@ -25,13 +25,16 @@ POST | AdminSales | Adminlik ve renkli yazı ekleme servisi, adminlik satışı 
 # Service Post Fields
 
 ## AddAdmin Servisi
+
 Input | Durum | Açıklama
 ------------- | -------------
 steamid | Gerekli | Kullanıcı Steam ID
 immunity | Gerekli | Dokunulmazlık seviyesi
 flags | Gerekli | Yetki bayrakları
 aciklama | Opsiyonel | Açıklama
+
 ## AddChatColors Servisi
+
 Input | Durum | Açıklama
 ------------- | -------------
 steamid | Gerekli | Steam id
@@ -43,6 +46,7 @@ namecolor | Gerekli | İsim rengi
 tagcolor | Gerekli | Tag Rengi
 
 ## AdminSales Servisi
+
 Input | Durum | Açıklama
 ------------- | -------------
 steamid | Gerekli | Kullanıcı Steam ID
@@ -57,6 +61,7 @@ namecolor | Gerekli | İsim rengi
 tagcolor | Gerekli | Tag Rengi
 
 # Renk listesi
+
 Kod| Renk adı
 ------------- | -------------
 {01}|Beyaz
