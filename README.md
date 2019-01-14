@@ -59,6 +59,7 @@ tagkiskacend | Gerekli | Tag sonlanma karakteri örn : [TAG] da ki ]
 textcolor | Gerekli | Yazı rengi
 namecolor | Gerekli | İsim rengi
 tagcolor | Gerekli | Tag Rengi
+customerapi | Gerekli | Panelde ki adminlik gruplarını kullanma(0 => Kendi datalarımı kullan, 1=> Panelde ki taslakları kullan)
 
 # Renk listesi
 
