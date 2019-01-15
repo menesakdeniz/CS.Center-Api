@@ -32,6 +32,7 @@ steamid | Gerekli | Kullanıcı Steam ID
 immunity | Gerekli | Dokunulmazlık seviyesi
 flags | Gerekli | Yetki bayrakları
 aciklama | Opsiyonel | Açıklama
+bitistarihi | Gerekli | Bitiş tarihi(unix timestamp)(0 => süresiz)
 
 ## AddChatColors Servisi
 
@@ -60,6 +61,7 @@ textcolor | Gerekli | Yazı rengi
 namecolor | Gerekli | İsim rengi
 tagcolor | Gerekli | Tag Rengi
 customerapi | Gerekli | Panelde ki adminlik gruplarını kullanma(0 => Kendi datalarımı kullan, 1=> Panelde ki taslakları kullan)
+bitistarihi | Gerekli | Bitiş tarihi(unix timestamp)(0 => süresiz)
 
 # Renk listesi
 
