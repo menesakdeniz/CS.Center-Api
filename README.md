@@ -13,6 +13,7 @@ https://cs.center/api/ **APIKEY** / **URUNID** / **SERVIS**
 
 Metod | SERVIS | Açıklama
 ------------- | ------------- | -------------
+GET | GetDonationHistory | Sisteme gelen bağışları listele(tip : json)
 GET | GetAdminGroups | Aktif admin gruplarını(tip : json)
 GET | GetAdmins | Aktif Adminlikleri listeler(tip : json)
 GET | GetChatColors | Aktif Renkli yazıları listeler(tip : json)
