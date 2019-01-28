@@ -1,6 +1,8 @@
 # CS.Center-Api
 CS.Center Api Dökümantasyon
 
+Hazır PHP Api için https://github.com/emrezorlu/cs.center adresine bakabilirsiniz.
+
 # Api endpoint
 https://cs.center/api/ **APIKEY** / **URUNID** / **SERVIS**
 
