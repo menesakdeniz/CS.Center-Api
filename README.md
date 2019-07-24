@@ -24,6 +24,9 @@ GET | ReloadAdmins | Adminlikleri yeniler(adminlik yazım sonrası için map de�
 POST | AddAdmin | Adminlik yazım servisi
 POST | AddChatColors | Renkli yazı ekleme servisi
 POST | AdminSales | Adminlik ve renkli yazı ekleme servisi, adminlik satışı sonrası çağırmanız gereken servistir(eğer renkli yazı yazmayacaksanız sade addadmin i kullanabilirsiniz).
+POST | SendRcon | Rcon komutu servisi
+GET | GetServerInfo | Server adını, oyuncu sayısını ve max kapasiteyi döndüren servis(A2S_Query)
+GET | GetPlayerInfo | Server player bilgilerini döndüren servis(A2S_Player)
 
 # Service Post Fields
 
@@ -65,6 +68,12 @@ namecolor | Gerekli | İsim rengi
 tagcolor | Gerekli | Tag Rengi
 customerapi | Gerekli | Panelde ki adminlik gruplarını kullanma(0 => Kendi datalarımı kullan, 1=> Panelde ki taslakları kullan)
 bitistarihi | Gerekli | Bitiş tarihi(unix timestamp)(0 => süresiz)
+
+## SendRcon Servisi
+
+Input | Durum | Açıklama
+------------- | ------------- | -------------
+cmd | Gerekli | Yollanacak komut
 
 # Renk listesi
 
