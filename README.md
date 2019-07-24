@@ -13,20 +13,20 @@ https://cs.center/api/ **APIKEY** / **URUNID** / **SERVIS**
 
 # Servisler
 
-Metod | SERVIS | Açıklama
+Metod | SERVIS | Açıklama | Rate(Limit)
 ------------- | ------------- | -------------
-GET | GetDonationHistory | Sisteme gelen bağışları listele(tip : json)
-GET | GetAdminGroups | Aktif admin gruplarını(tip : json)
-GET | GetAdmins | Aktif Adminlikleri listeler(tip : json)
-GET | GetChatColors | Aktif Renkli yazıları listeler(tip : json)
-GET | GetOverrides | Aktif komut üstünlüklerini listeler(tip : json)
-GET | ReloadAdmins | Adminlikleri yeniler(adminlik yazım sonrası için map değişmeden adminliğin aktif olmasında kullanılmalıdır)
-POST | AddAdmin | Adminlik yazım servisi
-POST | AddChatColors | Renkli yazı ekleme servisi
-POST | AdminSales | Adminlik ve renkli yazı ekleme servisi, adminlik satışı sonrası çağırmanız gereken servistir(eğer renkli yazı yazmayacaksanız sade addadmin i kullanabilirsiniz).
-POST | SendRcon | Rcon komutu servisi
-GET | GetServerInfo | Server adını, oyuncu sayısını ve max kapasiteyi döndüren servis(A2S_Query)
-GET | GetPlayerInfo | Server player bilgilerini döndüren servis(A2S_Player)
+GET | GetDonationHistory | Sisteme gelen bağışları listele(tip : json) | 60 Req/min
+GET | GetAdminGroups | Aktif admin gruplarını(tip : json) | 60 Req/min
+GET | GetAdmins | Aktif Adminlikleri listeler(tip : json) | 60 Req/min
+GET | GetChatColors | Aktif Renkli yazıları listeler(tip : json) | 60 Req/min
+GET | GetOverrides | Aktif komut üstünlüklerini listeler(tip : json) | 60 Req/min
+GET | ReloadAdmins | Adminlikleri yeniler(adminlik yazım sonrası için map değişmeden adminliğin aktif olmasında kullanılmalıdır) | 60 Req/min
+POST | AddAdmin | Adminlik yazım servisi | 60 Req/min
+POST | AddChatColors | Renkli yazı ekleme servisi | 60 Req/min
+POST | AdminSales | Adminlik ve renkli yazı ekleme servisi, adminlik satışı sonrası çağırmanız gereken servistir(eğer renkli yazı yazmayacaksanız sade addadmin i kullanabilirsiniz). | 60 Req/min
+POST | SendRcon | Rcon komutu servisi | 60 Req/min
+GET | GetServerInfo | Server adını, oyuncu sayısını ve max kapasiteyi döndüren servis(A2S_Query) | 60 Req/min
+GET | GetPlayerInfo | Server player bilgilerini döndüren servis(A2S_Player) | 60 Req/min
 
 # Service Post Fields
 
