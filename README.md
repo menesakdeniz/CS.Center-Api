@@ -14,7 +14,7 @@ https://cs.center/api/ **APIKEY** / **URUNID** / **SERVIS**
 # Servisler
 
 Metod | SERVIS | Açıklama | Rate(Limit)
-------------- | ------------- | -------------
+------------- | ------------- | ------------- | -------------
 GET | GetDonationHistory | Sisteme gelen bağışları listele(tip : json) | 60 Req/min 
 GET | GetAdminGroups | Aktif admin gruplarını(tip : json) | 60 Req/min 
 GET | GetAdmins | Aktif Adminlikleri listeler(tip : json) | 60 Req/min 
