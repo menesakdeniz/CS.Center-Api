@@ -22,6 +22,7 @@ GET | GetChatColors | Aktif Renkli yazıları listeler(tip : json) | 60 Req/min
 GET | GetOverrides | Aktif komut üstünlüklerini listeler(tip : json) | 60 Req/min 
 GET | ReloadAdmins | Adminlikleri yeniler(adminlik yazım sonrası için map değişmeden adminliğin aktif olmasında kullanılmalıdır) | 60 Req/min 
 POST | AddAdmin | Adminlik yazım servisi | 60 Req/min 
+POST | DeleteAdmin | Adminlik silme servisi | 60 Req/min 
 POST | AddChatColors | Renkli yazı ekleme servisi | 60 Req/min 
 POST | AdminSales | Adminlik ve renkli yazı ekleme servisi, adminlik satışı sonrası çağırmanız gereken servistir(eğer renkli yazı yazmayacaksanız sade addadmin i kullanabilirsiniz). | 60 Req/min 
 POST | SendRcon | Rcon komutu servisi | 60 Req/min 
@@ -39,6 +40,12 @@ immunity | Gerekli | Dokunulmazlık seviyesi
 flags | Gerekli | Yetki bayrakları
 aciklama | Opsiyonel | Açıklama
 bitistarihi | Gerekli | Bitiş tarihi(unix timestamp)(0 => süresiz)
+
+## DeleteAdmin Servisi
+
+Input | Durum | Açıklama
+------------- | ------------- | -------------
+steamid | Gerekli | Silinecek Admin Steam ID
 
 ## AddChatColors Servisi
 
