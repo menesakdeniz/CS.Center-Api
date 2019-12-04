@@ -7,13 +7,14 @@ Hazır PHP Api için https://github.com/emrezorlu/cs.center adresine bakabilirsi
 https://cs.center/api/ **APIKEY** / **URUNID** / **SERVIS**
 
 # Ön bilgi
-**APIKEY** inize şifre değiştirme ekranının en altında bulabilirsiniz(her şifre değişimi sonrası api key değişir).
-**URUNID** Hizmetlerim kısmında yer alan ürün id
-
-Auth gerekmeyen servislerde, ip adresini APIKEY, portu ise URUNID olarak yazabilirsiniz
-örneğin :
-https://cs.center/api/ 45.10.56.1 / 27015 / GetServerInfo
-https://cs.center/api/ 45.10.56.1 / 27015 / GetPlayerInfo
+**APIKEY** inize şifre değiştirme ekranının en altında bulabilirsiniz(her şifre değişimi sonrası api key değişir). 
+**URUNID** Hizmetlerim kısmında yer alan ürün id 
+ 
+Auth gerekmeyen servislerde, ip adresini APIKEY, portu ise URUNID olarak yazabilirsiniz. 
+ 
+örneğin : 
+https://cs.center/api/ 45.10.56.1 / 27015 / GetServerInfo 
+https://cs.center/api/ 45.10.56.1 / 27015 / GetPlayerInfo 
 
 
 # Servisler
