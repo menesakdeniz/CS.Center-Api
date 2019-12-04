@@ -10,24 +10,29 @@ https://cs.center/api/ **APIKEY** / **URUNID** / **SERVIS**
 **APIKEY** inize şifre değiştirme ekranının en altında bulabilirsiniz(her şifre değişimi sonrası api key değişir).
 **URUNID** Hizmetlerim kısmında yer alan ürün id
 
+Auth gerekmeyen servislerde, ip adresini APIKEY, portu ise URUNID olarak yazabilirsiniz
+örneğin :
+https://cs.center/api/ 45.10.56.1 / 27015 / GetServerInfo
+https://cs.center/api/ 45.10.56.1 / 27015 / GetPlayerInfo
+
 
 # Servisler
 
-Metod | SERVIS | Açıklama | Rate(Limit)
-------------- | ------------- | ------------- | -------------
-GET | GetDonationHistory | Sisteme gelen bağışları listele(tip : json) | 60 Req/min 
-GET | GetAdminGroups | Aktif admin gruplarını(tip : json) | 60 Req/min 
-GET | GetAdmins | Aktif Adminlikleri listeler(tip : json) | 60 Req/min 
-GET | GetChatColors | Aktif Renkli yazıları listeler(tip : json) | 60 Req/min 
-GET | GetOverrides | Aktif komut üstünlüklerini listeler(tip : json) | 60 Req/min 
-GET | ReloadAdmins | Adminlikleri yeniler(adminlik yazım sonrası için map değişmeden adminliğin aktif olmasında kullanılmalıdır) | 60 Req/min 
-POST | AddAdmin | Adminlik yazım servisi | 60 Req/min 
-POST | DeleteAdmin | Adminlik silme servisi | 60 Req/min 
-POST | AddChatColors | Renkli yazı ekleme servisi | 60 Req/min 
-POST | AdminSales | Adminlik ve renkli yazı ekleme servisi, adminlik satışı sonrası çağırmanız gereken servistir(eğer renkli yazı yazmayacaksanız sade addadmin i kullanabilirsiniz). | 60 Req/min 
-POST | SendRcon | Rcon komutu servisi | 60 Req/min 
-GET | GetServerInfo | Server adını, oyuncu sayısını ve max kapasiteyi döndüren servis(A2S_Query) | 60 Req/min 
-GET | GetPlayerInfo | Server player bilgilerini döndüren servis(A2S_Player) | 60 Req/min 
+Metod | SERVIS | Açıklama | Rate(Limit) | Auth
+------------- | ------------- | ------------- | ------------- | ------------- 
+GET | GetDonationHistory | Sisteme gelen bağışları listele(tip : json) | 60 Req/min | Gerekli 
+GET | GetAdminGroups | Aktif admin gruplarını(tip : json) | 60 Req/min | Gerekli 
+GET | GetAdmins | Aktif Adminlikleri listeler(tip : json) | 60 Req/min | Gerekli 
+GET | GetChatColors | Aktif Renkli yazıları listeler(tip : json) | 60 Req/min | Gerekli 
+GET | GetOverrides | Aktif komut üstünlüklerini listeler(tip : json) | 60 Req/min | Gerekli 
+GET | ReloadAdmins | Adminlikleri yeniler(adminlik yazım sonrası için map değişmeden adminliğin aktif olmasında kullanılmalıdır) | 60 Req/min | Gerekli 
+POST | AddAdmin | Adminlik yazım servisi | 60 Req/min | Gerekli 
+POST | DeleteAdmin | Adminlik silme servisi | 60 Req/min | Gerekli 
+POST | AddChatColors | Renkli yazı ekleme servisi | 60 Req/min | Gerekli 
+POST | AdminSales | Adminlik ve renkli yazı ekleme servisi, adminlik satışı sonrası çağırmanız gereken servistir(eğer renkli yazı yazmayacaksanız sade addadmin i kullanabilirsiniz). | 60 Req/min | Gerekli 
+POST | SendRcon | Rcon komutu servisi | 60 Req/min | Gerekli 
+GET | GetServerInfo | Server adını, oyuncu sayısını ve max kapasiteyi döndüren servis(A2S_Query) | 60 Req/min | Gereksiz 
+GET | GetPlayerInfo | Server player bilgilerini döndüren servis(A2S_Player) | 60 Req/min | Gereksiz
 
 # Service Post Fields
 
