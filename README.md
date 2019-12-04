@@ -14,6 +14,7 @@ Auth gerekmeyen servislerde, ip adresini APIKEY, portu ise URUNID olarak yazabil
  
 örneğin : 
 https://cs.center/api/ 45.10.56.1 / 27015 / GetServerInfo 
+
 https://cs.center/api/ 45.10.56.1 / 27015 / GetPlayerInfo 
 
 
