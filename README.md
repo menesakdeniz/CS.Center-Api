@@ -35,6 +35,7 @@ POST | AdminSales | Adminlik ve renkli yazı ekleme servisi, adminlik satışı 
 POST | SendRcon | Rcon komutu servisi | 60 Req/min | Gerekli 
 GET | GetServerInfo | Server adını, oyuncu sayısını ve max kapasiteyi döndüren servis(A2S_Query) | 60 Req/min | Gereksiz 
 GET | GetPlayerInfo | Server player bilgilerini döndüren servis(A2S_Player) | 60 Req/min | Gereksiz
+GET | GetServerDatas | Server içerisinde ki sqlite dosyalarını okuyup json formatında geri döndürür.(Cache dolayısıyla veriler her 10 dakikada bir güncellenir). [Örnek çıktıya buradan ulaşabilirsiniz.](https://github.com/menesakdeniz/CS.Center-Api/blob/master/GetServerDatas.json) | 1 Req/min | Gerekli
 
 # Service Post Fields
 
