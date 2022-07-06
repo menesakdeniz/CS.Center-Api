@@ -23,6 +23,7 @@ https://cs.center/api/ 45.10.56.1 / 27015 / GetPlayerInfo
 Metod | SERVIS | Açıklama | Rate(Limit) | Auth
 ------------- | ------------- | ------------- | ------------- | ------------- 
 GET | Validate | API Key geçerli mi kontrol eder(ürün id -1 bırakınız) | 15 Req/min | Gerekli 
+GET | RestartServer | Serveri yeniden başlatır | 10 Req/min | Gerekli 
 GET | GetDonationHistory | Sisteme gelen bağışları listele(tip : json) | 60 Req/min | Gerekli 
 GET | GetAdminGroups | Aktif admin gruplarını(tip : json) | 60 Req/min | Gerekli 
 GET | GetAdmins | Aktif Adminlikleri listeler(tip : json) | 60 Req/min | Gerekli 
