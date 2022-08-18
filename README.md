@@ -26,12 +26,15 @@ GET | Validate | API Key geçerli mi kontrol eder(ürün id -1 bırakınız) | 1
 GET | RestartServer | Serveri yeniden başlatır | 10 Req/min | Gerekli 
 GET | GetDonationHistory | Sisteme gelen bağışları listele(tip : json) | 60 Req/min | Gerekli 
 GET | GetAdminGroups | Aktif admin gruplarını(tip : json) | 60 Req/min | Gerekli 
-GET | GetAdmins | Aktif Adminlikleri listeler(tip : json) | 60 Req/min | Gerekli 
+GET | GetAdmins | Aktif Adminlikleri listeler(tip : json)(admins.cfg) | 60 Req/min | Gerekli 
+GET | GetAdmins_Simple | Aktif Adminlikleri listeler(tip : json)(admins_simple.ini) | 60 Req/min | Gerekli 
 GET | GetChatColors | Aktif Renkli yazıları listeler(tip : json) | 60 Req/min | Gerekli 
 GET | GetOverrides | Aktif komut üstünlüklerini listeler(tip : json) | 60 Req/min | Gerekli 
 GET | ReloadAdmins | Adminlikleri yeniler(adminlik yazım sonrası için map değişmeden adminliğin aktif olmasında kullanılmalıdır) | 60 Req/min | Gerekli 
-POST | AddAdmin | Adminlik yazım servisi | 60 Req/min | Gerekli 
-POST | DeleteAdmin | Adminlik silme servisi | 60 Req/min | Gerekli 
+POST | AddAdmin | Adminlik yazım servisi(admins.cfg) | 60 Req/min | Gerekli 
+POST | DeleteAdmin | Adminlik silme servisi(admins.cfg) | 60 Req/min | Gerekli 
+POST | AddAdmin_Simple | Adminlik yazım servisi(admins_simple.ini) | 60 Req/min | Gerekli 
+POST | DeleteAdmin_Simple | Adminlik silme servisi(admins_simple.ini) | 60 Req/min | Gerekli 
 POST | AddChatColors | Renkli yazı ekleme servisi | 60 Req/min | Gerekli 
 POST | AdminSales | Adminlik ve renkli yazı ekleme servisi, adminlik satışı sonrası çağırmanız gereken servistir(eğer renkli yazı yazmayacaksanız sade addadmin i kullanabilirsiniz). | 60 Req/min | Gerekli 
 POST | SendRcon | Rcon komutu servisi | 60 Req/min | Gerekli 
@@ -52,6 +55,22 @@ aciklama | Opsiyonel | Açıklama
 bitistarihi | Gerekli | Bitiş tarihi(unix timestamp)(0 => süresiz)
 
 ## DeleteAdmin Servisi
+
+Input | Durum | Açıklama
+------------- | ------------- | -------------
+steamid | Gerekli | Silinecek Admin Steam ID
+
+## AddAdmin_Simple Servisi
+
+Input | Durum | Açıklama
+------------- | ------------- | -------------
+steamid | Gerekli | Kullanıcı Steam ID
+immunity | Gerekli | Dokunulmazlık seviyesi
+flags | Gerekli | Yetki bayrakları veya @ ile beraber grup adı
+aciklama | Opsiyonel | Açıklama
+bitistarihi | Gerekli | Bitiş tarihi(unix timestamp)(0 => süresiz)
+
+## DeleteAdmin_Simple Servisi
 
 Input | Durum | Açıklama
 ------------- | ------------- | -------------
